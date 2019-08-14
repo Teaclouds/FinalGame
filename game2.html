@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- canvas size is 960 x 640 -->
+  <!-- but really it's 300 x 150 -->
+<canvas id="canvas" style="border:1px solid #000000;">
+</canvas>
+
+</body>
+<script>
+  var c = document.getElementById("canvas");
+  var ctx = c.getContext("2d");
+  ctx.fillStyle = "#3caea3";
+  ctx.fillRect(10, 100, 280, 50); //other rect
+</script>
+</html>
