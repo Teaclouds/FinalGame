@@ -1,3 +1,7 @@
+/* html {
+  background-color:black;
+} */
+
 #canvas {
     background:#fffdd0;
     width:960px;
@@ -9,24 +13,17 @@
   	margin:auto;
 }
 
-#textbox {
-  background:#fffdd0;
-  width:960px;
-  height:640px;
-  border:1px solid #000;
-  position:absolute;
-  left:0; right:0;
-  top:0; bottom:0;
-  margin:auto;
-}
-.names {
-  border-style: solid; border-radius: 5px; background-color: beige;
-  border-left-width: 5px; border-color: tan; bottom: 10px
-}
-html {
-  background-color:black;
+#canvas > * {
+  position: absolute;
 }
 
-fillRect {
-  border-radius: 25px;
+.textbox {
+  background:#3caea3;
+  width:940px;
+  height:40px;
+  left:10;
+  right:10;
+  top:0;
+  bottom:0;
+  margin:auto;
 }
