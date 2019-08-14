@@ -1,3 +1,8 @@
 html {font-family: "palatino"; background-color:beige;text-align: center}
 h1 {font-size:23px}
 p {font-size:17px; color:goldenrod }
+
+.names {
+  border-style: solid; border-radius: 5px; background-color: beige;
+  border-left-width: 5px; border-color: tan;
+}
