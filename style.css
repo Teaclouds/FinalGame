@@ -19,7 +19,10 @@
   top:0; bottom:0;
   margin:auto;
 }
-
+.names {
+  border-style: solid; border-radius: 5px; background-color: beige;
+  border-left-width: 5px; border-color: tan; bottom: 10px
+}
 html {
   background-color:black;
 }
