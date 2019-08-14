@@ -11,7 +11,10 @@ canvas {
     left: 0;
     right: 0;
 }
-
+.names {
+  border-style: solid; border-radius: 5px; background-color: beige;
+  border-left-width: 5px; border-color: tan; bottom: 10px
+}
 html {
   background-color:black;
 }
