@@ -6,14 +6,28 @@
 <body>
   <!-- canvas size is 960 x 640 -->
   <!-- but really it's 300 x 150 -->
-<canvas id="canvas" style="border:1px solid #000000;">
-</canvas>
+
+
+<div id="canvas">
+  <div id="textbox"></div>
+</div>
 
 </body>
-<script>
-  var c = document.getElementById("canvas");
+<!-- <script>
+  canvas = document.getElementById('output')
+  canvas.width = 1920;
+  canvas.height = 1280;
+  canvas.style.width = "960px";
+  canvas.style.height = "640px";
+  canvas.getContext('2d').scale(2,2)
+
   var ctx = c.getContext("2d");
   ctx.fillStyle = "#3caea3";
-  ctx.fillRect(10, 100, 280, 50); //other rect
+  ctx.fillRect(0, 0, 1000, 1000); //other rect
+  //
+  // ctx.font = "12px Bookman Old Style";
+  // ctx.fillText("This is teal", 10, 90); -->
+
+
 </script>
 </html>
