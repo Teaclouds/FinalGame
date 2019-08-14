@@ -2,7 +2,21 @@ html {font-family: "palatino"; background-color:beige;text-align: center}
 h1 {font-size:23px}
 p {font-size:17px; color:goldenrod }
 
-.names {
-  border-style: solid; border-radius: 5px; background-color: beige;
-  border-left-width: 5px; border-color: tan;
+.btnB{
+  border-radius: 5px; background-color: pink; border-style: solid; font-size: 50;
+
+}
+.btnJ{
+  font-size: 50; border-radius: 5px; background-color: Yellow; border-style: solid; 
+
+}
+
+.btnO{
+  border-radius: 5px; background-color: Orange; border-style: solid; font-size: 50;
+
+}
+
+.btnT{
+  border-radius: 5px; background-color: Teal; border-style: solid; font-size: 50;
+
 }
