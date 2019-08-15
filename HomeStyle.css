@@ -2,20 +2,20 @@ html {font-family: "palatino"; background-color:beige;text-align: center}
 h1 {font-size:23px}
 
 .btnB{
-  background-color: #20639B;
+  background-color: #173F5F;
   border-style: solid;
   font-family: 'Arial';
   font-size: 50px;
 }
 .btnJ{
-  background-color: Yellow;
+  background-color: #173F5F;
   border-style: solid;
   font-family: 'Arial';
   font-size: 50px;
 }
 
 .btnT{
-  background-color: Teal;
+  background-color: #173F5F;
   border-style: solid;
   font-size: 50;
   font-family: 'Arial';
