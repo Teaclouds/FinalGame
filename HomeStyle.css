@@ -5,21 +5,21 @@ h1 {font-size:23px}
   background-color: #20639B;
   border-style: solid;
   font-family: 'Arial';
-  font-size: 50px;
+  font-size: 30px;
 }
 .btnJ{
   background-color: Yellow;
   border-style: solid;
   font-family: 'Arial';
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .btnT{
   background-color: Teal;
   border-style: solid;
-  font-size: 50;
+  font-size: 30px;
   font-family: 'Arial';
-  font-size: 50px;
+
 }
 .Pg1Welcome{
   font-style: 'Arial';
@@ -36,5 +36,12 @@ h1 {font-size:23px}
 .column2 {
   float: left;
   width: 33.33%;
+}
+
+.About {
+  border-style: none;
+  font-family: 'Arial';
+  font-size: 30px;
+
 }
 /* Clear floats after the columns */
