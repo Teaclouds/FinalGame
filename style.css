@@ -24,6 +24,11 @@
   margin:auto;
 }
 
+.texture {
+  background-image: url("floor-tile.png");
+  background-repeat: repeat;
+}
+
 .label {
   position: absolute;
   background:#3caea3;
