@@ -3,20 +3,16 @@ h1 {font-size:23px}
 p {font-size:17px; color:goldenrod }
 
 .btnB{
-  border-radius: 5px; background-color: pink; border-style: solid; font-size: 50;
+
+  background-color: pink; border-style: solid; font-family: 'Arial'; font-size: 50px;
 
 }
 .btnJ{
-  font-size: 50; border-radius: 5px; background-color: Yellow; border-style: solid; 
-
-}
-
-.btnO{
-  border-radius: 5px; background-color: Orange; border-style: solid; font-size: 50;
+  background-color: Yellow; border-style: solid; font-family: 'Arial'; font-size: 50px;
 
 }
 
 .btnT{
-  border-radius: 5px; background-color: Teal; border-style: solid; font-size: 50;
+  background-color: Teal; border-style: solid; font-size: 50; font-family: 'Arial'; font-size: 50px;
 
 }
