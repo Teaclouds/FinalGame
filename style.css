@@ -25,18 +25,17 @@
   margin:auto;
 }
 
-.texture {
-  background-image: url("floor-tile.png");
-  background-repeat: repeat;
-}
-
 .label {
   position: absolute;
   background:#3caea3;
   border-radius: 15px;
   width:150px;
-  height:100px;
+  height:40px;
   left:45px;
   top:420px;
   margin:auto;
+  padding:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
