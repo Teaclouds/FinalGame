@@ -1,6 +1,5 @@
 html {font-family: "palatino"; background-color:beige;text-align: center}
 h1 {font-size:23px}
-p {font-size:17px; color:goldenrod }
 
 .btnB{
   background-color: pink;
@@ -21,4 +20,12 @@ p {font-size:17px; color:goldenrod }
   font-size: 50;
   font-family: 'Arial';
   font-size: 50px;
+}
+.Pg1Welcome{
+  font-style: 'Arial';
+  font-size: 40px;
+}
+.heading{
+  font-style: 'Arial';
+  font-size: 60px;
 }
