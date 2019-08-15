@@ -7,14 +7,27 @@
   <div class="container">
     <div id="canvas">
 
-      <div class="textbox"></div>
-      <div class="label">
-        <p>Teagan</p>
-        </div>
+      <div class=textbox>
+        <div id=txt onload=""="typeWriter()"></div>
+      </div>
+      <div class=label>
+        <p id=name>Teagan</p>
+      </div>
     </div>
   </div>
 </body>
 <script>
+  var i = 0;
+  var txt = "Hello my name is Teagan. I'm rich and snobby. Poor people suck and can die in a hole."; /* The text */
+  var speed = 60; /* The speed/duration of the effect in milliseconds */
 
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("txt").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  window.onload = typeWriter();
 </script>
 </html>
