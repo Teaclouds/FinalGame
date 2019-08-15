@@ -29,3 +29,12 @@ h1 {font-size:23px}
   font-style: 'Arial';
   font-size: 60px;
 }
+.column {
+  float: left;
+  width: 33.33%;
+}
+.column2 {
+  float: left;
+  width: 33.33%;
+}
+/* Clear floats after the columns */
