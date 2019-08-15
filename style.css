@@ -15,6 +15,7 @@
 
 .textbox {
   background:#173f5f;
+  fill: url(#pattern);
   position: absolute;
   border-radius: 15px;
   width:920px;
