@@ -3,16 +3,22 @@ h1 {font-size:23px}
 p {font-size:17px; color:goldenrod }
 
 .btnB{
-
-  background-color: pink; border-style: solid; font-family: 'Arial'; font-size: 50px;
-
+  background-color: pink;
+  border-style: solid;
+  font-family: 'Arial';
+  font-size: 50px;
 }
 .btnJ{
-  background-color: Yellow; border-style: solid; font-family: 'Arial'; font-size: 50px;
-
+  background-color: Yellow;
+  border-style: solid;
+  font-family: 'Arial';
+  font-size: 50px;
 }
 
 .btnT{
-  background-color: Teal; border-style: solid; font-size: 50; font-family: 'Arial'; font-size: 50px;
-
+  background-color: Teal;
+  border-style: solid;
+  font-size: 50;
+  font-family: 'Arial';
+  font-size: 50px;
 }
