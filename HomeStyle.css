@@ -37,4 +37,11 @@ h1 {font-size:23px}
   float: left;
   width: 33.33%;
 }
+
+.About {
+  border-style: none;
+  font-family: 'Arial';
+  font-size: 30px;
+
+}
 /* Clear floats after the columns */
