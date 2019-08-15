@@ -1,0 +1,31 @@
+html {font-family: "palatino"; background-color:beige;text-align: center}
+h1 {font-size:23px}
+
+.btnB{
+  background-color: pink;
+  border-style: solid;
+  font-family: 'Arial';
+  font-size: 50px;
+}
+.btnJ{
+  background-color: Yellow;
+  border-style: solid;
+  font-family: 'Arial';
+  font-size: 50px;
+}
+
+.btnT{
+  background-color: Teal;
+  border-style: solid;
+  font-size: 50;
+  font-family: 'Arial';
+  font-size: 50px;
+}
+.Pg1Welcome{
+  font-style: 'Arial';
+  font-size: 40px;
+}
+.heading{
+  font-style: 'Arial';
+  font-size: 60px;
+}
