@@ -13,16 +13,24 @@
   	margin:auto;
 }
 
-#canvas > * {
-  position: absolute;
-}
-
 .textbox {
-  background:#3caea3;
+  background:#173f5f;
+  position: absolute;
+  border-radius: 15px;
   width:920px;
   height:180px;
   right:20px;
   top:460px;
-  bottom:0px;
+  margin:auto;
+}
+
+.label {
+  position: absolute;
+  background:#3caea3;
+  border-radius: 15px;
+  width:150px;
+  height:100px;
+  left:45px;
+  top:420px;
   margin:auto;
 }
