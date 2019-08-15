@@ -6,19 +6,22 @@
 <body>
   <div class="container">
     <div id="canvas">
-
       <div class=textbox>
         <div id=txt onload=""="typeWriter()"></div>
       </div>
       <div class=label>
         <p id=name>Teagan</p>
       </div>
+      <div>
+        <img src="duck.jpg" id=cont height="40px" width="40px">
+      </div>
     </div>
   </div>
 </body>
 <script>
   var i = 0;
-  var txt = "Hello my name is Teagan. I'm rich and snobby. Poor people suck and can die in a hole."; /* The text */
+  var txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.";
+  var secondTxt = "Mel in recteque qualisque. Lorem maluisset pro te. Quo possim electram iudicabit at, in prima idque convenire his. Liber discere eu quo, pri an nobis suavitate, te prompta assueverit usu.";
   var speed = 60; /* The speed/duration of the effect in milliseconds */
 
   function typeWriter() {
@@ -26,7 +29,7 @@
       document.getElementById("txt").innerHTML += txt.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
-    }
+    };
   }
   window.onload = typeWriter();
 </script>
