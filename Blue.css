@@ -1,2 +1,10 @@
-html {font-family: "palatino"; background-color:beige;text-align: center}
-h1 {font-size:23px}
+html {font-family: "palatino"; background-color:aquamarine;text-align: center}
+h1 {font-size:25px}
+
+.btn1{
+  background-color: dodgerblue;
+  border-style: solid;
+  font-family: 'palatino';
+  font-size: 30px;
+  border-radius: 5px;
+}
