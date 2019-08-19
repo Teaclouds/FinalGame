@@ -7,30 +7,84 @@
   <div>
     <div class="canvas">
       <div class=textbox>
-        <div id=txt onload=""="typeWriter()"></div>
+        <div id="text" onload="typeWriter()"></div>
         <div>
-          <img src="duck.jpg" id=cont height="40px" width="40px" class="center">
+          <img src="arrowDown.gif" id="cont" height="40px" width="40px"
+               class="center" onclick="changeTxt()">
+          <!-- onmouseover="move(this)" -->
         </div>
       </div>
-      <div class=label>
-        <p id=name>Teagan</p>
+      <div class="label">
+        <p id="name">Teagan</p>
       </div>
     </div>
   </div>
 </body>
 <script>
   var i = 0;
-  var txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.";
-  var secondTxt = "Mel in recteque qualisque. Lorem maluisset pro te. Quo possim electram iudicabit at, in prima idque convenire his. Liber discere eu quo, pri an nobis suavitate, te prompta assueverit usu.";
-  var speed = 60; /* The speed/duration of the effect in milliseconds */
+  var type = true;
+  var num = 0; //which dialogue in txt to use
+  var txt = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \
+  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni ad minim \
+  veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+
+  "Mel in recteque qualisque. Lorem maluisset pro te. Quo possim electram \
+  iudicabit at, in prima idque convenire his. Liber discere eu \
+  quo, pri an nobis suavitate, te prompta assueverit usu."];
+
+  var speed = 60; //speed of the typeWriter, how long to wait between letters
+
 
   function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("txt").innerHTML += txt.charAt(i);
+    if (i < txt[num].length && type == true) {
+      document.getElementById("text").innerHTML += txt[num].charAt(i);
       i++;
       setTimeout(typeWriter, speed);
-    };
+    } else if (i == txt[num].length) {
+      type = false;
+      i = 0;
+    }
   }
+
+  function changeTxt() {
+    if (type == true) { //if the typeWriter is running, shut it off
+      type = false;
+      i = 0;
+      document.getElementById("text").innerHTML = txt[num];
+    }  else if (type == false) { //if typeWriter is shut off (ie the button has been clicked already) change the text to the next one
+      //do some shit
+      //aka next text
+      // console.log("it worked!");
+      document.getElementById("text").innerHTML = "";
+      num++;
+      type = true;
+      typeWriter();
+      // console.log(txt[num].length);
+    }
+  }
+
+
+    // var changeTxt = document.getElementById("text").innerHTML = "";
+    // changeTxt.style.visiblity = "hidden";
+
+  // function move() {
+  //   const element = document.getElementById("cont");
+  //   y = 130;
+  //   if 135 >= y > 130 {
+  //     y++;
+  //   } else if 130 >= y >= 125 {
+  //     y -= 1;
+  //   }
+  //   while (y < 135) {
+  //     y-=1;
+  //     element.style.top = y;
+  //   };
+  //   while (y > 125) {
+  //     y++;
+  //     element.style.top = y;
+  //   };
+  // }
+  // console.log(txt[num].length);
   window.onload = typeWriter();
 </script>
 </html>
