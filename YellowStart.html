@@ -18,6 +18,8 @@
         <p id="name">Narration</p>
       </div>
       <div class="shadow"></div>
+      <input id="btn1" type=button onClick="location.href='Fight.html'" value='Take it by force' style="visibility: hidden;"> </p>
+      <input id="btn2" type=button onClick="location.href='takeEasy.html'" value='Take it using telekenesis' style="visibility: hidden;">
     </div>
   </div>
   <body>
@@ -46,7 +48,9 @@ take it and risk a possible fight. </p> -->
 
   "You know that you can easily take the wallet without a fight using \
   telekenesis, or you can do it the old-fashioned way, take it and risk a \
-  possible fight."];
+  possible fight.",
+
+  ""];
 
   var speed = 60; //speed of the typeWriter, how long to wait between letters
 
@@ -67,7 +71,8 @@ take it and risk a possible fight. </p> -->
       type = false;
       i = 0;
       document.getElementById("text").innerHTML = txt[num];
-    }  else if (type == false) { //if typeWriter is shut off (ie the button has been clicked already) change the text to the next one
+    }
+    else if (type == false) { //if typeWriter is shut off (ie the button has been clicked already) change the text to the next one
       //do some shit
       //aka next text
       // console.log("it worked!");
@@ -75,13 +80,12 @@ take it and risk a possible fight. </p> -->
       num++;
       type = true;
       typeWriter();
-      // console.log(txt[num].length);
-      if (num == 1) {
-
+      if (num == 2) {
+        document.getElementById("btn1").style.visibility = "visible";
+        document.getElementById("btn2").style.visibility = "visible";
       }
     }
   }
-
   window.onload = typeWriter();
 </script>
 </html>
