@@ -2,22 +2,32 @@ html {font-family: "palatino";
 background-image: url("graytile.png");
 background-position: 50% 50%;
 background-repeat: repeat; text-align: center}
-h1 {font-size:23px; color:mediumslateblue; border-style:double; border-width: 5px}
+
+h1 {font-size:23px;
+  color:mediumslateblue;}
+
 div {font-size:17px}
-p{color:darkgoldenrod}
+p{font-size: 18px; color:darkgoldenrod}
+
+.heading{
+  border-style:double;
+  padding: 8px;
+  border-width:5px}
 
 .btnB{
   background-color: #20639B;
-  border-style: solid;
-  border-width: 3px
+  border-style: groove;
   font-family: 'palatino';
-  font-size: 30px;
+  font-size: 28px;
 }
 .btnJ{
   background-color: gold;
-  border-style: solid;
+  border-style: groove;
+  border-width: 2px;
+  padding: 6px;
+  border-color: midnightblue;
   font-family: 'palatino';
-  font-size: 30px;
+  font-size: 28px;
 }
 
 /*.btnT{
@@ -34,20 +44,19 @@ p{color:darkgoldenrod}
 .heading{
   font-style: 'palatino';
   font-size: 50px;
-}
-/*.column {
+/*}
+.column {
   float: left;
   width: 33.33%;
 }
 .column2 {
   float: left;
-  width: 33.33%;*/
-}
+  width: 33.33%;
+}*/
 
 .About {
   border-style: none;
   font-family: 'palatino';
   font-size: 25px;
-
 }
 /* Clear floats after the columns */
