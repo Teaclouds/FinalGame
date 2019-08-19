@@ -1,5 +1,6 @@
 html {font-family: "palatino"; background-color:beige;text-align: center}
 h1 {font-size:23px}
+div {font-size:15px}
 
 .btnB{
   background-color: #20639B;
@@ -27,7 +28,7 @@ h1 {font-size:23px}
 }
 .heading{
   font-style: 'palatino';
-  font-size: 60px;
+  font-size: 50px;
 }
 .column {
   float: left;
