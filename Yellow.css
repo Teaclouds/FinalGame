@@ -12,6 +12,7 @@ html {
 
 
 .canvas {
+    z-index: 0;
     background:#f6d55c;
     width:960px;
     height:640px;
@@ -23,6 +24,7 @@ html {
 }
 
 .textbox {
+  z-index: 2;
   background: #173f5f;
   position: absolute;
   border-radius: 15px;
@@ -43,6 +45,7 @@ html {
 }
 
 .label {
+  z-index: 3;
   position: absolute;
   background: white;
   border-radius: 15px;
@@ -66,4 +69,21 @@ html {
   position: absolute;
   top: 135px;
   left: 440px;
+}
+
+.shadow {
+  z-index: 1;
+  position: absolute;
+  background: white;
+  border-radius: 15px;
+  width:150px;
+  height:40px;
+  left:45px;
+  top:400px;
+  margin:auto;
+  padding:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px #667078;
 }
