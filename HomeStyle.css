@@ -1,10 +1,12 @@
 html {font-family: "palatino";
 background-image: url("graytile.png");
 background-position: 50% 50%;
-background-repeat: repeat; text-align: center}
+background-repeat: repeat;
+text-align: center;}
 
 h1 {font-size:23px;
-  color:mediumslateblue;}
+  color:mediumslateblue;
+  text-shadow:5px 8px gold}
 
 div {font-size:17px}
 p{font-size: 18px; color:darkgoldenrod}
@@ -12,22 +14,35 @@ p{font-size: 18px; color:darkgoldenrod}
 .heading{
   border-style:double;
   padding: 8px;
-  border-width:5px}
+  border-width:5px;
+  font-family: "palatino"
+}
 
 .btnB{
   background-color: #20639B;
   border-style: groove;
-  font-family: 'palatino';
   font-size: 28px;
+  font-family: "palatino"
 }
+
 .btnJ{
   background-color: gold;
-  border-style: groove;
+  border-style: double;
   border-width: 2px;
-  padding: 6px;
+  padding: 8px;
   border-color: midnightblue;
-  font-family: 'palatino';
   font-size: 28px;
+  font-family: "palatino"
+}
+
+.btnH {
+  background-color: gold;
+  border-color: midnightblue;
+  border-style: double;
+  padding: 8px;
+  border-width: 2px;
+  font-size: 28px;
+  font-family: "palatino"
 }
 
 /*.btnT{
