@@ -5,7 +5,8 @@ background-repeat: repeat;
 text-align: center;}
 
 h1 {font-size:23px;
-  color:mediumslateblue;}
+  color:mediumslateblue;
+  text-shadow:5px 8px gold}
 
 div {font-size:17px}
 p{font-size: 18px; color:darkgoldenrod}
