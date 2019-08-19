@@ -1,5 +1,6 @@
-html {font-family: "palatino"; background-color:#2a569c;text-align: center;}
-h1 {font-size: 25px}
+html {
+  font-family: Optima, sans-serif;
+}
 
 .btn1{
   background-color: LightGray;
@@ -7,4 +8,62 @@ h1 {font-size: 25px}
   font-family: 'palatino';
   font-size: 30px;
   border-radius: 5px;
+}
+
+
+.canvas {
+    background:#f6d55c;
+    width:960px;
+    height:640px;
+    border:1px solid #000;
+    position:relative;
+    left:0; right:0;
+    top:0; bottom:0;
+  	margin:auto;
+}
+
+.textbox {
+  background: #173f5f;
+  position: absolute;
+  border-radius: 15px;
+  width: 920px;
+  height: 180px;
+  right: 20px;
+  top: 440px;
+  margin:auto;
+  box-shadow: 10px 10px 10px #0c2030;
+}
+
+#text {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.label {
+  position: absolute;
+  background: white;
+  border-radius: 15px;
+  width:150px;
+  height:40px;
+  left:45px;
+  top:400px;
+  margin:auto;
+  padding:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  font-size: 35px;
+  color: #173f5f;
+}
+
+.center {
+  position: absolute;
+  top: 135px;
+  left: 440px;
 }
