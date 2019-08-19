@@ -1,14 +1,15 @@
 html {font-family: "palatino";
-background-image: url("floor-tile.png");
+background-image: url("graytile.png");
 background-position: 50% 50%;
 background-repeat: repeat; text-align: center}
-h1 {font-size:23px; color:mediumslateblue}
+h1 {font-size:23px; color:mediumslateblue; border-style:double; border-width: 5px}
 div {font-size:17px}
 p{color:darkgoldenrod}
 
 .btnB{
   background-color: #20639B;
   border-style: solid;
+  border-width: 3px
   font-family: 'palatino';
   font-size: 30px;
 }
