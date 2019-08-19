@@ -1,6 +1,10 @@
-html {font-family: "palatino"; background-color:beige;text-align: center}
-h1 {font-size:23px}
-div {font-size:15px}
+html {font-family: "palatino";
+background-image: url("floor-tile.png");
+background-position: 50% 50%;
+background-repeat: repeat; text-align: center}
+h1 {font-size:23px; color:mediumslateblue}
+div {font-size:17px}
+p{color:darkgoldenrod}
 
 .btnB{
   background-color: #20639B;
@@ -9,17 +13,17 @@ div {font-size:15px}
   font-size: 30px;
 }
 .btnJ{
-  background-color: Yellow;
+  background-color: gold;
   border-style: solid;
   font-family: 'palatino';
   font-size: 30px;
 }
 
-.btnT{
+/*.btnT{
   background-color: Teal;
   border-style: solid;
   font-size: 30px;
-  font-family: 'palatino';
+  font-family: 'palatino';*/
 
 }
 .Pg1Welcome{
@@ -30,13 +34,13 @@ div {font-size:15px}
   font-style: 'palatino';
   font-size: 50px;
 }
-.column {
+/*.column {
   float: left;
   width: 33.33%;
 }
 .column2 {
   float: left;
-  width: 33.33%;
+  width: 33.33%;*/
 }
 
 .About {
