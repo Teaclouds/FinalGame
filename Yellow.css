@@ -4,7 +4,7 @@ html {
 
 .canvas {
     z-index: 0;
-    background: #f6d55c;
+    background: white;
     width:960px;
     height:640px;
     border:1px solid #000;
@@ -14,8 +14,21 @@ html {
   	margin:auto;
 }
 
+#image {
+  z-index: 1;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  /* opacity: 0.5; */
+  width:960px;
+  height:640px;
+  position: relative;
+  left:0; right:0;
+  top:0; bottom:0;
+  margin:auto;
+}
+
 .textbox {
-  z-index: 2;
+  z-index: 3;
   background: #173f5f;
   position: absolute;
   border-radius: 15px;
@@ -24,7 +37,7 @@ html {
   right: 20px;
   top: 440px;
   margin:auto;
-  box-shadow: 10px 10px 10px #667078;
+  box-shadow: 10px 10px 10px #050d13;
 }
 
 #text {
@@ -36,7 +49,7 @@ html {
 }
 
 .label {
-  z-index: 3;
+  z-index: 4;
   position: absolute;
   background: white;
   border-radius: 15px;
@@ -63,7 +76,7 @@ html {
 }
 
 .shadow {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   background: white;
   border-radius: 15px;
@@ -76,7 +89,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 10px #667078;
+  box-shadow: 10px 10px 10px #050d13;
 }
 
 #btn1{
