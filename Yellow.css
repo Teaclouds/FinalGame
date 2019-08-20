@@ -1,5 +1,8 @@
 html {
   font-family: Optima, sans-serif;
+  background-image: url("grey harringbone.jpeg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
 }
 
 .canvas {
