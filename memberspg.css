@@ -1,7 +1,30 @@
-html {font-family: inherit;
+html {
+  font-family: inherit;
   background-color: cornsilk/*floralwhite/*deepskyblue*/;
-  text-align: center} /*rgb(200, 255, 128)*/
-h1 {font-size:25px;
-    color: navy;}
-p {font-size:17px;
-    color:green;}
+  text-align: center
+} /*rgb(200, 255, 128)*/
+h1 {
+  font-size:25px;
+  color: navy;
+}
+p {
+  font-size:17px;
+  color:green;
+}
+#home {
+  z-index: 5;
+  background-color: #173f5f;
+  border-style: double;
+  border-width: 2px;
+  padding: 8px;
+  width: 200px;
+  border-color: mediumslateblue;
+  font-size: 20px;
+  border-radius: 15px;
+  font-family: Optima, sans-serif;
+  position: fixed;
+  top: 640px;
+  left: 1220px;
+  color:#f6d55c;
+  box-shadow: 10px 10px 10px #050d13;
+}

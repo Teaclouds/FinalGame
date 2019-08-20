@@ -135,12 +135,35 @@ h1 {
   font-family: Optima, sans-serif;
 }
 
+#home {
+  z-index: 5;
+  background-color: #173f5f;
+  border-style: double;
+  border-width: 2px;
+  padding: 8px;
+  width: 200px;
+  border-color: mediumslateblue;
+  font-size: 20px;
+  border-radius: 15px;
+  font-family: Optima, sans-serif;
+  position: fixed;
+  top: 640px;
+  left: 1220px;
+  color:#f6d55c;
+  box-shadow: 10px 10px 10px #050d13;
+}
+
 #btn1:hover {
 animation: shake 0.3s;
 animation-iteration-count: infinite;
 }
 
 #btn2:hover {
+animation: shake 0.3s;
+animation-iteration-count: infinite;
+}
+
+#home:hover {
 animation: shake 0.3s;
 animation-iteration-count: infinite;
 }
