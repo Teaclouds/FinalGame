@@ -83,15 +83,12 @@ a {
   font-size: 25px;
 }
 /* Clear floats after the columns */
-<<<<<<< HEAD
 
 .footer{
-s  text-align: center;
+  text-align: center;
   bottom: 5px;
   width: 100%;
   background-image: url("p.gif");
   background-position: 50% 50%;
   background-repeat: repeat;
 }
-=======
->>>>>>> a7d77a892a2d74c3e2f00df6e0a93791f61fd6c6
