@@ -1,32 +1,30 @@
-</html>
-
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="Yellow.css">
   <head>
-    <title> Hideout </title>
+    <title> Marigold </title>
 
   </head>
-  <body>
-
   <h1 class="heading" style="text-align:center"> HECATE </h1>
+  <div>
+    <div class="canvas">
+      <img src="alleyway.jpg" id="image">
+      <div class=textbox>
+        <div id="text" onload="typeWriter()"></div>
+        <div>
+          <img src="arrowDown.gif" id="cont" height="40px" width="40px"
+               class="center" onclick="changeTxt()">
+        </div>
+      </div>
+      <div class="label">
+        <p id="name">Narration</p>
+      </div>
+      <div class="shadow"></div>
+      <input id="btn1" type=button onClick="location.href='homePg.html'" value='End Game' style="visibility: hidden; top: 510px; left: 410px"> </p>
+    </div>
+  </div>
 
-<h1 style="color:gold"> Hideout </h1>
-<br></br>
-<p> You start to jog towards your home (aka hideout), keeping a watch for anyone that may be following you.
-oOce you arrived, you look around, seeing the place you've called home for a while.
-You have a small bed, a set of drawers, a few other belongings, as well as a safe that you managed to steal a
-few years ago. Then you notice a necklace on the ground that looks valuable as well. </p>
-<br></br>
-</p>
-<input class="btn1" type=button onClick="location.href='Street.html'" value='Sleep'> </p>
-<br></br>
-<input class="btn1" type=button onClick="location.href='Street.html'" value='Go to the street'>
-<br></br>
-<p align="center">
-<input class="btn1" type=button onClick="location.href='Street.html'" value='Necklace?'> </p>
-
-  </body>
+  <body>
 
 <script>
   var i = 0;
