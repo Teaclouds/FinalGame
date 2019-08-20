@@ -85,8 +85,7 @@ a {
 /* Clear floats after the columns */
 
 .footer{
-  /*position: fixed;*/
-  text-align: center;
+s  text-align: center;
   bottom: 5px;
   width: 100%;
   background-image: url("p.gif");
