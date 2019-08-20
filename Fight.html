@@ -1,24 +1,75 @@
 <!DOCTYPE html>
-<html style="text-align: center">
+<html>
 <link rel="stylesheet" href="Yellow.css">
   <head>
-    <title> Force </title>
+    <title> Marigold </title>
 
   </head>
-
+  <div>
+    <div class="canvas">
+      <div class=textbox>
+        <div id="text" onload="typeWriter()"></div>
+        <div>
+          <img src="arrowDown.gif" id="cont" height="40px" width="40px"
+               class="center" onclick="changeTxt()">
+        </div>
+      </div>
+      <div class="label">
+        <p id="name">Narration</p>
+      </div>
+      <div class="shadow"></div>
+      <input id="btn1" type=button onClick="location.href='GrabRun.html'" value='Grab the whole purse and run' style="visibility: hidden; top: 480px; left: 290px"> </p>
+      <input id="btn2" type=button onClick="location.href='Threaten.html'" value='Threaten them until you get the money' style="visibility: hidden; top: 540px; left: 230px">
+    </div>
+  </div>
   <body>
-<h1 style="color:gold"> You chose to take the wallet using force </h1>
-<br></br>
-<p> You have decided to take the wallet by force,
-and chose to pull the girl into the alley with you. You demand that she gives you her money,
-but she tells you that she have none while keeping a tight hold on the purse.
-What do you do? </p>
-<br></br>
-</p>
-<p align="center">
-<input class="btn1" type=button onClick="location.href='GrabRun.html'" value='Grab the whole purse and run'> </p>
-<br></br>
-<input class="btn1" type=button onClick="location.href='Threaten.html'" value='Threaten them until you get the money'>
-  </body>
+<script>
+  var i = 0;
+  var type = true;
+  var num = 0; //which dialogue in txt to use
+  var txt = ["You have decided to take the wallet by force, and chose to \
+  pull the girl into the alley. You demand that she gives you her money, \
+   but she tells you that she have none while keeping a tight hold on the purse.",
 
+  " What do you do?",
+
+  ""];
+
+  var speed = 60; //speed of the typeWriter, how long to wait between letters
+
+
+  function typeWriter() {
+    if (i < txt[num].length && type == true) {
+      document.getElementById("text").innerHTML += txt[num].charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    } else if (i == txt[num].length) {
+      type = false;
+      i = 0;
+    }
+  }
+
+  function changeTxt() {
+    if (type == true) { //if the typeWriter is running, shut it off
+      type = false;
+      i = 0;
+      document.getElementById("text").innerHTML = txt[num];
+    }
+    else if (type == false) { //if typeWriter is shut off (ie the button has been clicked already) change the text to the next one
+      //do some shit
+      //aka next text
+      // console.log("it worked!");
+      document.getElementById("text").innerHTML = "";
+      num++;
+      type = true;
+      typeWriter();
+      if (num == 2) {
+        document.getElementById("btn1").style.visibility = "visible"; //shows the first button
+        document.getElementById("btn2").style.visibility = "visible"; //shows the second button
+        document.getElementById("cont").style.visibility = "hidden"; //hides the next arrow
+      }
+    }
+  }
+  window.onload = typeWriter();
+</script>
 </html>
