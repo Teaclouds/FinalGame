@@ -1,16 +1,15 @@
+</html>
+
 <!DOCTYPE html>
-<html style="text-align: center">
+<html>
 <link rel="stylesheet" href="Yellow.css">
   <head>
-    <title> Force </title>
-
+    <title> Hideout </title>
 
   </head>
+  <body>
 
   <h1 class="heading" style="text-align:center"> HECATE </h1>
-
-
-  <body>
 
 <h1 style="color:gold"> Hideout </h1>
 <br></br>
@@ -28,5 +27,55 @@ few years ago. Then you notice a necklace on the ground that looks valuable as w
 <input class="btn1" type=button onClick="location.href='Street.html'" value='Necklace?'> </p>
 
   </body>
+
+<script>
+  var i = 0;
+  var type = true;
+  var num = 0; //which dialogue in txt to use
+  var txt = ["You start to jog towards your home (aka hideout), \
+  you find that everything is how you left it, \
+  rand you put the newly stolen purse away and you decide to rest,",
+
+  " knowing that youve made it away yet again.",
+
+  ""];
+
+  var speed = 60; //speed of the typeWriter, how long to wait between letters
+
+
+  function typeWriter() {
+    if (i < txt[num].length && type == true) {
+      document.getElementById("text").innerHTML += txt[num].charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    } else if (i == txt[num].length) {
+      type = false;
+      i = 0;
+    }
+  }
+
+  function changeTxt() {
+    if (type == true) { //if the typeWriter is running, shut it off
+      type = false;
+      i = 0;
+      document.getElementById("text").innerHTML = txt[num];
+    }
+    else if (type == false) { //if typeWriter is shut off (ie the button has been clicked already) change the text to the next one
+      //do some shit
+      //aka next text
+      // console.log("it worked!");
+      document.getElementById("text").innerHTML = "";
+      num++;
+      type = true;
+      typeWriter();
+      if (num == 2) {
+        document.getElementById("btn1").style.visibility = "visible";
+        document.getElementById("cont").style.visibility = "hidden";
+      }
+    }
+  }
+  window.onload = typeWriter();
+</script>
+
 
 </html>
