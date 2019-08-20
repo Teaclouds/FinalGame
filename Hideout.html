@@ -16,7 +16,7 @@
                class="center" onclick="changeTxt()">
         </div>
       </div>
-      <div class="label">
+      <div class="label" id="labelColor">
         <p id="name">Narration</p>
       </div>
       <div class="shadow"></div>
@@ -52,9 +52,13 @@
   var i = 0;
   var type = true;
   var num = 0; //which dialogue in txt to use
-  var txt = ["You jog towards your hideout. You find that everything\
-  is how you left it. Then you count the money and put away the newly-stolen purse.\
-  Now you decide to rest, knowing that you have successfully gotten away once again.",
+  var txt = ["You jog towards your hideout, and find that everything \
+  is how you left it. You count the money and put away the newly-stolen purse.",
+
+  "Nice! One hundred and thirty seven dollars. That should get me some new \
+  clothes at least.",
+
+  "Afterward, you decide to rest, knowing that you have successfully gotten away once again.",
 
   ""];
 
@@ -87,6 +91,16 @@
       type = true;
       typeWriter();
       if (num == 1) {
+        document.getElementById("name").innerHTML = "You";
+        document.getElementById("labelColor").style.backgroundColor = "#f6d55c";
+        document.getElementById("text").style.color = "#f6d55c";
+      }
+      if (num == 2) {
+        document.getElementById("name").innerHTML = "Narration";
+        document.getElementById("labelColor").style.backgroundColor = "white";
+        document.getElementById("text").style.color = "white";
+      }
+      if (num == 3) {
         document.getElementById("btn1").style.visibility = "visible";
         document.getElementById("cont").style.visibility = "hidden";
       }
