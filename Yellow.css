@@ -7,7 +7,7 @@ html {
 
 .canvas {
     z-index: 1;
-    background: #f6d55c;
+    background: white;
     width:960px;
     height:640px;
     border:1px solid #000;
