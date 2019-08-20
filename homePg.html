@@ -8,6 +8,36 @@
   </head>
 
   <body>
+    <style>
+      img:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+      }
+
+      #play:hover {
+      animation: shake 0.3s;
+      animation-iteration-count: infinite;
+      }
+
+      #about:hover {
+      animation: shake 0.3s;
+      animation-iteration-count: infinite;
+      }
+
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+</style>
 
         <h1 class="heading"> CASSIOPAEIA </h1>
 <!--        <h1> Pick one of the following characters</h1>
@@ -43,7 +73,6 @@
                  </tr>-->
         <button id="about"> <a href="memberspg.html" style="color:#f6d55c" id="aboutTxt"> About us </a> </button>
         <button id="play"> <a href="YellowStart.html" style="color:#f6d55c" id="playTxt"> Play </a></button>
-        </p>
         <p align='center'> Marigold learned to lie, hide, rob, and steal from her guardians.
           Her power is telekinesis, the ability to control inanimate objects at will. </p>
 
