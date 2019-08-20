@@ -12,6 +12,7 @@ h1 {
 }
 
 .heading{
+  text-align:center;
   border-style:double;
   border-color: mediumslateblue;
   padding: 8px;
