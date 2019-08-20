@@ -1,5 +1,5 @@
 html {font-family: Optima, sans-serif;
-background-image: url("graytile.png");
+background-image: url("grey harringbone.jpeg");
 background-position: 50% 50%;
 background-repeat: repeat;
 text-align: center;}
@@ -15,14 +15,14 @@ p{font-size: 18px; color:darkgoldenrod}
   border-style:double;
   padding: 8px;
   border-width:5px;
-  font-family: "palatino"
+  font-family: Optima, sans-serif;
 }
 
 .btnB{
   background-color: #20639B;
   border-style: groove;
   font-size: 28px;
-  font-family: "palatino"
+  font-family: Optima, sans-serif;
 }
 
 .btnJ{
@@ -33,7 +33,7 @@ p{font-size: 18px; color:darkgoldenrod}
   width: 130px;
   border-color: midnightblue;
   font-size: 28px;
-  font-family: "palatino"
+  font-family: Optima, sans-serif;
 }
 
 .btnH {
@@ -43,7 +43,7 @@ p{font-size: 18px; color:darkgoldenrod}
   padding: 8px;
   border-width: 2px;
   font-size: 28px;
-  font-family: "palatino"
+  font-family: Optima, sans-serif;
 }
 
 /*.btnT{
@@ -54,11 +54,11 @@ p{font-size: 18px; color:darkgoldenrod}
 
 }
 .Pg1Welcome{
-  font-style: 'palatino';
+  font-style: Optima, sans-serif;
   font-size: 40px;
 }
 .heading{
-  font-style: 'palatino';
+  font-style: Optima, sans-serif;
   font-size: 50px;
 /*}
 .column {
@@ -72,7 +72,7 @@ p{font-size: 18px; color:darkgoldenrod}
 
 .About {
   border-style: none;
-  font-family: 'palatino';
+  font-family: Optima, sans-serif;
   font-size: 25px;
 }
 /* Clear floats after the columns */

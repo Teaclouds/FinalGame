@@ -1,10 +1,13 @@
 html {
   font-family: Optima, sans-serif;
+  background-image: url("grey harringbone.jpeg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
 }
 
 .canvas {
-    z-index: 0;
-    background: white;
+    z-index: 1;
+    background: #f6d55c;
     width:960px;
     height:640px;
     border:1px solid #000;
@@ -15,10 +18,9 @@ html {
 }
 
 #image {
-  z-index: 1;
+  z-index: 0;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  /* opacity: 0.5; */
   width:960px;
   height:640px;
   position: relative;
