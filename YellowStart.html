@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html style="text-align: center">
 <link rel="stylesheet" href="Yellow.css">
   <head>
     <title> Marigold </title>
 
   </head>
+
   <div>
     <div class="canvas">
       <img src="alleyway.jpg" id="image">
@@ -23,7 +24,15 @@
       <input id="btn2" type=button onClick="location.href='takeEasy.html'" value='Take it using telekenesis' style="visibility: hidden;">
     </div>
   </div>
+
   <body>
+<h1 style="color:gold"> You have selected Marigold! </h1>
+<br></br>
+<p>
+</p>
+
+  </body>
+
 <script>
   var i = 0;
   var type = true;
@@ -67,12 +76,12 @@
       type = true;
       typeWriter();
       if (num == 2) {
-        document.getElementById("btn1").style.visibility = "visible"; //shows the first button
-        document.getElementById("btn2").style.visibility = "visible"; //shows the second button
-        document.getElementById("cont").style.visibility = "hidden"; //hides the next arrow
+        document.getElementById("btn1").style.visibility = "visible";
+        document.getElementById("btn2").style.visibility = "visible";
       }
     }
   }
   window.onload = typeWriter();
 </script>
+
 </html>
