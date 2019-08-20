@@ -83,6 +83,7 @@ a {
   font-size: 25px;
 }
 /* Clear floats after the columns */
+<<<<<<< HEAD
 
 .footer{
 s  text-align: center;
@@ -92,3 +93,5 @@ s  text-align: center;
   background-position: 50% 50%;
   background-repeat: repeat;
 }
+=======
+>>>>>>> a7d77a892a2d74c3e2f00df6e0a93791f61fd6c6

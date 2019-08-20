@@ -5,6 +5,20 @@ html {
   background-repeat: repeat;
 }
 
+h1 {
+  font-size:23px;
+  color: #f6d55c;
+  text-shadow: 0px 0px 15px #173f5f
+}
+
+.heading{
+  border-style:double;
+  border-color: mediumslateblue;
+  padding: 8px;
+  border-width:5px;
+  font-family: Optima, sans-serif;
+}
+
 .canvas {
     z-index: 1;
     background: white;
