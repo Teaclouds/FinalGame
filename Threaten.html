@@ -22,7 +22,8 @@
         <p id="name">Narration</p>
       </div>
       <div class="shadow"></div>
-      <input id="btn1" type=button onClick="location.href='PlaceChoose.html'" value='Run' style="visibility: hidden;  top: 500px; left: 450px"> </p>
+      <input id="btn1" type=button onClick="location.href='PlaceChoose.html'" value='Run' style="visibility: hidden;  top: 500px; left: 350px"> </p>
+      <input id="btn2" type=button onClick="location.href='Caught.html'" value='Stay put and hide' style="visibility: hidden;  top: 500px; left: 450px"> </p>
       <input id="home" type=button onClick="location.href='homePg.html'" value='Back to Home Page'>
   </div>
 
@@ -93,7 +94,8 @@
         document.getElementById("name").innerHTML = "Narration";
         document.getElementById("labelColor").style.backgroundColor = "white";
         document.getElementById("text").style.color = "white";
-        document.getElementById("btn1").style.visibility = "visible";  //shows the first button
+        document.getElementById("btn1").style.visibility = "visible";
+        document.getElementById("btn2").style.visibility = "visible";  //shows the first button
         document.getElementById("cont").style.visibility = "hidden"; //hides the next arrow
       }
     }

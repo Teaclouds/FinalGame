@@ -21,8 +21,7 @@
         <p id="name">Narration</p>
       </div>
       <div class="shadow"></div>
-      <input id="btn1" type=button onClick="location.href='PlaceChoose.html'" value='Keep Running' style="visibility: hidden; top: 500px; left: 250px"> </p>
-      <input id="btn2" type=button onClick="location.href='Caught.html'" value='Stay put and hide' style="visibility: hidden;  top: 500px; left: 500px"> </p>
+      <input id="btn1" type=button onClick="location.href='homePg.html'" value='Youve been caught, End Game' style="visibility: hidden; top: 500px; left: 250px"> </p>
       <input id="home" type=button onClick="location.href='homePg.html'" value='Back to Home Page'>
     </div>
   </div>
@@ -49,12 +48,9 @@
   var i = 0;
   var type = true;
   var num = 0; //which dialogue in txt to use
-  var txt = ["You reach forward and grab the purse out of the girl's hands and \
-  push her to the ground as you run down the street.",
-
-  "Every so often you look behind to see if you are being followed, only to \
-  see a few people giving you odd looks. You slow down to a walk until you \
-  can't see the girl and her blue hair anymore.",
+  var txt = ["You decided to stay put and hide\
+        After a short period of time someone finds you \
+        and you get arrested for robbing the girl.",
 
   ""];
 
@@ -86,9 +82,8 @@
       num++;
       type = true;
       typeWriter();
-      if (num == 2) {
+      if (num == 1) {
         document.getElementById("btn1").style.visibility = "visible"; //shows the first button
-        document.getElementById("btn2").style.visibility = "visible";
         document.getElementById("cont").style.visibility = "hidden"; //hides the next arrow
       }
     }
